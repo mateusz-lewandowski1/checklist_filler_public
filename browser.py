@@ -37,7 +37,7 @@ class Browser:
         """
         try:
             WebDriverWait(self.browser, 15).until(
-                EC.frame_to_be_available_and_switch_to_it((By.XPATH, "/html/body/div[2]/div[1]/iframe"))
+                EC.frame_to_be_available_and_switch_to_it((By.XPATH, "---"))
             )
             print("Switched to iframe")
         except Exception as e:
@@ -50,7 +50,7 @@ class Browser:
         try:
             element = WebDriverWait(self.browser, 10).until(
                 EC.visibility_of_element_located(
-                    (By.XPATH, "/html/body/div[1]/div/div/div/div[4]/div/div/div[7]/div/div/div/div/div[1]/div/div/div/div[66]/div/div/div/div[3]/div/div/div/div[1]/div[1]/ul/li")
+                    (By.XPATH, "---")
                 )
             )
             self.browser.execute_script("arguments[0].scrollIntoView(true);", element)
