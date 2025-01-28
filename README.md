@@ -1,4 +1,4 @@
-# Decommission Checklist Automation
+# Decommission Checklist Automation (WITH SENSITIVE DATA HIDDEN WITH "---")
 
 This project automates the process of filling out a decommission checklist using Selenium and Excel. The tool reads asset names and their statuses from an Excel file and interacts with a web application (in Power Apps) to tick the appropriate checkboxes. It also marks the processed asset names in green in the Excel file.
 
